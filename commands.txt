@@ -1,0 +1,8 @@
+sudo apt update
+sudo apt install ufw -y
+sudo ufw enable
+sudo ufw status numbered
+sudo ufw deny 23/tcp
+sudo ufw allow 22/tcp
+telnet localhost 23
+sudo ufw delete deny 23/tcp
